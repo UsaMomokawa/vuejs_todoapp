@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue.jsテスト</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <button @click="setAlign('left'), setColor('red')">ひだりよせ</button>
+      <button @click="setAlign('center'), setColor('blue')">まんなか</button>
+      <button @click="setAlign('right'), setColor('green')">みぎよせ</button>
+      <p v-bind:style="{color:color, textAlign:align, fontSize:size}">ちわーす</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="./style2.js"></script>
+</body>
+
+</html>

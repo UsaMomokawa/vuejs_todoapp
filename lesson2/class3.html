@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue.jsテスト</title>
+  <style>
+    .center {
+      text-align: center
+    }
+    .big {
+      font-size: 4rem;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <button @click='enhance=!enhance'>ここをクリックして拡大</button>
+    <p v-bind:class="[centerClass, {big: enhance}]">Vue.jsの世界</p>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="./class3.js"></script>
+</body>
+
+</html>
