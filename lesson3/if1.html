@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue.jsテスト</title>
+</head>
+
+<body>
+  <div id="app">
+    <button @click="show = !show">表示/非表示</button>
+    <div>
+      <p v-if="show">ひょっこりはん</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="./if1.js"></script>
+</body>
+
+</html>
